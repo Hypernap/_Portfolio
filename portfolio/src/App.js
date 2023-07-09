@@ -4,6 +4,7 @@ import { mdiInstagram,mdiTwitter,mdiLinkedin,mdiGithub } from '@mdi/js';
 import Icon from '@mdi/react';
 import { Button } from '@nextui-org/react';
 import { LockIcon } from './downloading';
+import myImage from './Picture1.png';
 
 const user = {
   avatarUrl: require('./logo.svg').default
@@ -33,10 +34,15 @@ function App() {
                       </a>
                     </div>
               </section>
+      <div className='land'>
+      
         <Spline className='land' scene="https://prod.spline.design/G4TWr51Lp5-mITtJ/scene.splinecode" />
-      <section className='end'>
-        <h1>ENDING</h1>
-      </section>
+        <div className='sidebar'>HITS: INTERACT WITH THE OBJECTS WHICH MOVE ON-HOVER</div>
+      </div>
+    <section className='end'>
+        <img src={myImage} className="Myimg" alt="My Self" />
+        <h1 id="inner_name">Thank You </h1>
+    </section>
     </div>
 
   );

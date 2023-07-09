@@ -3,10 +3,24 @@ body {
   font-family:'Roboto';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(18, 18, 18);;
+  background-color: rgb(18, 18, 18);
+  scrollbar-base-color:linear-gradient(to right,#fdfcfe8a, #fbf8f838);
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+#inner_name{
+  font-size: 8vw;
+  font-weight: bold;
+  font-style: bold;
+  background: linear-gradient(to right,#5307ec, #fb0303);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
