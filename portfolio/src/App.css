@@ -1,0 +1,70 @@
+.land{
+  /* height: 900px; */
+}
+.end{
+  background-color: rgb(18, 18, 18);
+  color: whitesmoke;
+  height: 100%;
+  width: 100%;
+}
+
+.black{
+  background-color: rgb(18, 18, 18);
+}
+.upper_nav{
+  width: 93%;
+  height: 50px;
+  border-radius: 10px;
+  margin: 20px 15px 3% 3%;
+  /* background-color: aqua; */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.599);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display:flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  position:fixed;
+  top:-10px;
+  z-index:999;
+  animation-name: uppIn;
+  animation-duration: 2s;
+}
+.social_icons{
+  margin-right: 10px;
+  width: inherit;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  margin:10px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(254, 255, 255);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.upper_btn_cv{
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+.upper_down_btn{
+  text-decoration: none;
+}
+.name{
+  font-size: 30px;
+  font-style: bold;
+}
+canvas{
+  aspect-ratio: 1600/900;
+  zoom: 100%;
+}
+

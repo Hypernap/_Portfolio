@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@splinetool/react-spline": "github:splinetool/react-spline"
+  }
+}
