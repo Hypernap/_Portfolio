@@ -5,17 +5,23 @@
 .end{
   background-color: rgb(18, 18, 18);
   color: whitesmoke;
-  height: 100%;
+  height: 60vh;
   width: 100%;
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 50px;
   display: flex;
+  align-items:flex-end;
   gap: 50px;
 }
-
+.im{
+}
 .black{
   background-color: rgb(18, 18, 18);
+ 
+}
+#lo{
+  display: none;
 }
 .upper_nav{
   width: 93%;
@@ -74,18 +80,16 @@ canvas{
   height: 100%;
   zoom: 100%;
 }
-.sidebar{
-  left: 90%;
-  bottom: -15%;
-  position: absolute;
-  height: 200px;
-  width: 200px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+#sidebar{
+  display: flex;
+  justify-content: center;
+  width:100%;
+  color: antiquewhite;
 }
+
 .Myimg{
   image-rendering: optimizeQuality;
-  aspect-ratio: 10/13;
+  aspect-ratio: 11/13;
   width: 300px;
   filter: drop-shadow(0 0 1px black);
   /* margin-top: 50px; */
@@ -103,6 +107,14 @@ canvas{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+#inner_name1{
+  font-size: 3vw;
+
+}
+.part{
+  display: flex;
+  flex-direction: column;
+}
 
 @keyframes uppIn {
   0%{
@@ -110,5 +122,71 @@ canvas{
   }
   100%{
     transform: translateY(0px);
+  }
+}
+#loader {
+  display: block;
+  position: absolute;
+  top: calc(50% - 32px);
+  left: calc(50% - 32px);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  perspective: 800px;
+}
+
+.inner {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;  
+}
+
+.inner.one {
+  left: 0%;
+  top: 0%;
+  animation: rotate-one 1s linear infinite;
+  border-bottom: 3px solid #EFEFFA;
+}
+
+.inner.two {
+  right: 0%;
+  top: 0%;
+  animation: rotate-two 1s linear infinite;
+  border-right: 3px solid #EFEFFA;
+}
+
+.inner.three {
+  right: 0%;
+  bottom: 0%;
+  animation: rotate-three 1s linear infinite;
+  border-top: 3px solid #EFEFFA;
+}
+
+@keyframes rotate-one {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-two {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-three {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
   }
 }

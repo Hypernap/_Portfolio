@@ -1,18 +1,47 @@
 import './App.css';
+
+import React from 'react';
 import Spline from '@splinetool/react-spline';
 import { mdiInstagram,mdiTwitter,mdiLinkedin,mdiGithub } from '@mdi/js';
 import Icon from '@mdi/react';
 import { Button } from '@nextui-org/react';
 import { LockIcon } from './downloading';
 import myImage from './Picture1.png';
-
+// import { useEffect } from 'react';
+// const Spline = React.lazy(() => import('@splinetool/react-spline'));
 const user = {
   avatarUrl: require('./logo.svg').default
 };
+
 const icon_size = 1.5;
+
+function onLoad() {
+  console.log("loaded");
+    setTimeout(() => {
+      let foo = document.getElementById('lo');
+      let loo = document.getElementById('loader');
+      let doo = document.getElementById('sidebar');
+      foo.style.display="block";
+      loo.style.display="none";
+      doo.style.display="none";
+    }, 5000);
+  
+}
+
+
+
+
 function App() {
+  window.addEventListener('load', onLoad);
   return (
     <div className='black'>
+            <div id="loader">
+        <div className="inner one"></div>
+        <div className="inner two"></div>
+        <div className="inner three"></div>
+      </div>
+      <div id='sidebar'><h1>INTERACT WITH THE OBJECTS WHICH MOVE ON-HOVER</h1></div>
+      <div id='lo'>
               <section className='upper_nav'> 
                 <div className="avatar" style={{ backgroundImage: `url(${user.avatarUrl})` }}></div>
                 <span className='name'>Portfolio.</span>
@@ -36,13 +65,17 @@ function App() {
               </section>
       <div className='land'>
       
-        <Spline className='land' scene="https://prod.spline.design/G4TWr51Lp5-mITtJ/scene.splinecode" />
-        <div className='sidebar'>HITS: INTERACT WITH THE OBJECTS WHICH MOVE ON-HOVER</div>
+        <Spline className='land' scene="https://prod.spline.design/G4TWr51Lp5-mITtJ/scene.splinecode"  />
+       
       </div>
     <section className='end'>
-        <img src={myImage} className="Myimg" alt="My Self" />
-        <h1 id="inner_name">Thank You </h1>
+        <div className='im'><img src={myImage} className="Myimg" alt="My Self" /></div>
+        <div className='part'>
+        <span id="inner_name">Thank You </span>
+        <span id="inner_name1">If you liked my Portfolio or want to colaborate with me , contact me through my socials. </span>
+        </div>
     </section>
+    </div>
     </div>
 
   );

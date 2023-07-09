@@ -6,6 +6,8 @@ body {
   background-color: rgb(18, 18, 18);
   scrollbar-base-color:linear-gradient(to right,#fdfcfe8a, #fbf8f838);
   overflow-x: hidden;
+  
+
 }
 ::-webkit-scrollbar {
   display: none;
@@ -24,3 +26,4 @@ code {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
