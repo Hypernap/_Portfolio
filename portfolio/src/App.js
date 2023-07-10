@@ -52,7 +52,7 @@ function App() {
                       <a href="https://github.com/Hypernap" ><Icon path={mdiGithub} size={icon_size} color="black"/></a>
                       <a
                       className='upper_down_btn'
-                      href={"https://drive.google.com/file/d/1pHty1AA2pYw7FL2_SlKEs16j3eu2EPzI/view?usp=drive_link"}
+                      href={"https://drive.google.com/drive/folders/1Jzplx8VeHSEhIa4kKyoKLp9W3m0YT3Ka?usp=sharing"}
                       download="Sankalp_Dubedy_Resume"
                       target="_blank"
                       rel="noreferrer"
