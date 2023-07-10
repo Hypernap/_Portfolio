@@ -93,8 +93,8 @@ canvas{
   width: 300px;
   filter: drop-shadow(0 0 1px black);
   /* margin-top: 50px; */
-  animation-name: imgIn;
-  animation-duration: 2s;
+  /* animation-name: imgIn;
+  animation-duration: 2s; */
   /* display: none; */
 }
 
@@ -188,5 +188,35 @@ canvas{
   }
   100% {
     transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+
+
+@media (max-width: 850px) {
+  canvas{
+    aspect-ratio: 9/13;
+  }
+  .Myimg{
+    image-rendering: optimizeQuality;
+    aspect-ratio: 13/12;
+    width: 30vh;
+    filter: drop-shadow(0 0 1px black);
+    /* margin-top: 50px; */
+    /* animation-name: imgIn;
+    animation-duration: 2s; */
+    /* display: none; */
+  }
+  #inner_name{
+    font-size: 8vh;
+    font-weight: bold;
+    font-style: bold;
+    background: linear-gradient(to right,#5307ec, #fb0303);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #inner_name1{
+    font-size: 4vh;
+  
   }
 }
