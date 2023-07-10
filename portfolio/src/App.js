@@ -24,7 +24,7 @@ function onLoad() {
       foo.style.display="block";
       loo.style.display="none";
       doo.style.display="none";
-    }, 5000);
+    }, 1000);
   
 }
 
