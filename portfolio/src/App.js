@@ -2,7 +2,7 @@ import './App.css';
 
 import React from 'react';
 import Spline from '@splinetool/react-spline';
-import { mdiInstagram,mdiTwitter,mdiLinkedin,mdiGithub } from '@mdi/js';
+import { mdiInstagram,mdiTwitter } from '@mdi/js';
 import Icon from '@mdi/react';
 import { Button } from '@nextui-org/react';
 import { LockIcon } from './downloading';
@@ -46,10 +46,10 @@ function App() {
                 <div className="avatar" style={{ backgroundImage: `url(${user.avatarUrl})` }}></div>
                 <span className='name'>Portfolio.</span>
                     <div className='social_icons'>
-                      <a href="https://www.instagram.com/sankalpdubedy/" ><Icon path={mdiInstagram} size={icon_size} color="red"/></a>
-                      <a href="https://twitter.com/Sankalpdubedy" ><Icon path={mdiTwitter } size={icon_size} color="rgb(0, 47, 255)"/></a>
-                      <a href="https://www.linkedin.com/in/sankalp-dubedy-a9aa50200/" ><Icon path={mdiLinkedin } size={icon_size} color="blue"/></a>
-                      <a href="https://github.com/Hypernap" ><Icon path={mdiGithub} size={icon_size} color="black"/></a>
+                      <a href="https://www.instagram.com/sankalpdubedy/" target="_blank" rel="noopener noreferrer" ><Icon path={mdiInstagram} size={icon_size} color="red"/></a>
+                      <a href="https://twitter.com/Sankalpdubedy" target="_blank" rel="noopener noreferrer" ><Icon path={mdiTwitter } size={icon_size} color="rgb(0, 47, 255)"/></a>
+                      {/* <a href="https://www.linkedin.com/in/sankalp-dubedy-a9aa50200/" ><Icon path={mdiLinkedin } size={icon_size} color="blue"/></a>
+                      <a href="https://github.com/Hypernap" ><Icon path={mdiGithub} size={icon_size} color="black"/></a> */}
                       <a
                       className='upper_down_btn'
                       href={"https://drive.google.com/drive/folders/1Jzplx8VeHSEhIa4kKyoKLp9W3m0YT3Ka?usp=sharing"}
